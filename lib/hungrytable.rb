@@ -24,6 +24,7 @@ module Hungrytable
 
   def error_codes
     {
+      58  => { message: 'This login is not valid. Please try again.', name: 'VALIDLOGIN'},
       152 => { message: 'The email address is not valid.  Please try again.', name: 'VALIDEMAIL' },
       160 => { message: "We're sorry but we were unable to complete you request.  Our technical team has been notified of the problem and will resolve it shortly.  Thank you.", name: "GENERALERROR" },
       197 => { message: "You must select at least one restaurant to search.", name: "PROVIDERESTAURANT" },
@@ -67,7 +68,10 @@ module Hungrytable
       323 => { message: "The service you are trying to access is currently unavailable, please try again later.", name: "SERVICEUNAVAILABLE" },
       324 => { message: "The service experienced a timeout.  Please try again later.", name: "SERVICETIMEOUT" },
       325 => { message: "Invalid number of lookback days, the most you can look back is 8 days.", name: "INVALIDLOOKBACKDAYS" },
-      326 => { message: "This service is currently disabled.  Please try again later.", name: "CURRENTLYDISABLED" }
+      326 => { message: "This service is currently disabled.  Please try again later.", name: "CURRENTLYDISABLED" },
+      328 => { message: "This credit card is invalid. Please try another one.", name: "CCINVALID"},
+      330 => { message: "You do not have access to this environment.", name: "PRODUCTIONACCESSDISABLED"},
+      331 => { message: "Internal Partners only.", name: "INTERNALPARTNERONLY"}
     }
   end
 end
