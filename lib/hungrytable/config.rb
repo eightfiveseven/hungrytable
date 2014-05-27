@@ -14,8 +14,9 @@ module Hungrytable
       ENV['OT_OAUTH_SECRET'] || config_error('OT_OAUTH_SECRET')
     end
 
+    # was https://secure.opentable.com/api/otapi_v3.ashx
     def base_url
-      'https://secure.opentable.com/api/otapi_v3.ashx'
+      'https://secure.opentable.com/api/V3.ashx'
     end
 
     private
