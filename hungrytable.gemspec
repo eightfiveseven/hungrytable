@@ -5,11 +5,11 @@ require "hungrytable/version"
 Gem::Specification.new do |s|
   s.name        = "hungrytable"
   s.version     = Hungrytable::VERSION
-  s.authors     = ["David Chapman", "Nicholas Fine"]
-  s.email       = ["david@isotope11.com", 'nicholas.fine@gmail.com']
-  s.homepage    = "http://www.isotope11.com/"
+  s.authors     = ["Oliver Day", "Jason Callina"]
+  s.email       = ["oliver.day@tripcraft.com", 'jason.callina@tripcraft.com']
+  s.homepage    = "http://www.tripcraft.com/"
   s.summary     = %q{Gem to interact with OpenTable's REST API}
-  s.description = %q{Gem to interact with OpenTable's REST API}
+  s.description = %q{Fork of original project that seems abandoned. Gem to interact with OpenTable's REST API}
 
   s.rubyforge_project = "hungrytable"
 
